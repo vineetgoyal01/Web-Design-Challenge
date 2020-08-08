@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Website</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Latitude Comparison Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#">Plots</a>
+          </li>
+          <li>
+            <a href="#">Comparison</a>
+          </li>
+          <li>
+            <a href="#">Data</a>
+          </li>
+        </ul>
+        <select id="nav-select">
+          <option value="home">Home</option>
+          <option value="about">About</option>
+          <option value="portfolio">Portfolio</option>
+          <option value="contact">Contact</option>
+        </select>
+        <div class="clearfix"></div>
+      </nav>
+      <section>
+        <h1>WeatherPy</h1>
+        <article>
+        <a target="_blank" href="assets/images/cloudymap.png">
+          <img src="assets/images/cloudymap.png" alt="Cloudy Map">
+        </a>
+        <p><em>Cloudy Map</em></p>
+        </article>
+        <hr>
+        <article>
+        <a target="_blank" href="assets/images/humiditymap.png">
+        <img src="assets/images/humiditymap.png" alt="Humidity Map">
+        </a>
+        <p><em>Humidity Map</em></p>
+        </article>
+        <hr>
+        <article>
+          <a href="assets/images/temperaturemap.png">
+          <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map">
+          </a>
+          <p><em>Temperature Map</em></p>
+        </article>
+        <hr>
+        <!-- an example using figure/ficaption -->
+        <figure>
+          <a target="_blank" href="assets/images/windmap.png">
+          <img src="assets/images/windmap.png" alt="Wind Map">
+          </a>
+          <figcaption><em>Wind Map</em></figcaption>
+        </figure>
+      </section>
+</body>
+
+</html>
